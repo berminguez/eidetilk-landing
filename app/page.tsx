@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <SponsorsSection />
+    {/*   <SponsorsSection /> */}
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
