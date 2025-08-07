@@ -13,27 +13,27 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: '¿Qué es Eidetik y cómo funciona?',
+    question: '¿Qué es Framik y cómo funciona?',
     answer:
-      'Eidetik es una plataforma de memoria eidética para IA que transforma videos en conocimiento estructurado. Utiliza algoritmos avanzados de procesamiento de video, transcripción automática y análisis visual para crear embeddings semánticos que tus sistemas de IA pueden consultar instantáneamente.',
+      'Framik es una plataforma de memoria eidética para IA que transforma videos en conocimiento estructurado. Utiliza algoritmos avanzados de procesamiento de video, transcripción automática y análisis visual para crear embeddings semánticos que tus sistemas de IA pueden consultar instantáneamente.',
     value: 'item-1',
   },
   {
-    question: '¿Qué tipos de videos puede procesar Eidetik?',
+    question: '¿Qué tipos de videos puede procesar Framik?',
     answer:
-      'Eidetik puede procesar cualquier contenido multimedia: videos de formación, reuniones grabadas, webinars, entrevistas, presentaciones, tutoriales, demos de productos y más. Soporta los formatos más comunes (MP4, AVI, MOV, etc.) y puede manejar desde clips cortos hasta sesiones de varias horas.',
+      'Framik puede procesar cualquier contenido multimedia: videos de formación, reuniones grabadas, webinars, entrevistas, presentaciones, tutoriales, demos de productos y más. Soporta los formatos más comunes (MP4, AVI, MOV, etc.) y puede manejar desde clips cortos hasta sesiones de varias horas.',
     value: 'item-2',
   },
   {
-    question: '¿Cómo me integro con la API MCP de Eidetik?',
+    question: '¿Cómo me integro con la API MCP de Framik?',
     answer:
-      'Eidetik ofrece una API REST completa compatible con Model Context Protocol (MCP). Puedes integrarla con Claude, ChatGPT y otros sistemas de IA en minutos. Proporcionamos SDKs, documentación completa y ejemplos de código para las integraciones más comunes.',
+      'Framik ofrece una API REST completa compatible con Model Context Protocol (MCP). Puedes integrarla con Claude, ChatGPT y otros sistemas de IA en minutos. Proporcionamos SDKs, documentación completa y ejemplos de código para las integraciones más comunes.',
     value: 'item-3',
   },
   {
     question: '¿Es seguro subir contenido empresarial sensible?',
     answer:
-      'Absolutamente. Eidetik implementa cifrado de extremo a extremo, almacenamiento seguro en la nube, auditorías de compliance y separación completa de datos entre organizaciones. Los planes empresariales incluyen SSO, SAML y controles de acceso granulares.',
+      'Absolutamente. Framik implementa cifrado de extremo a extremo, almacenamiento seguro en la nube, auditorías de compliance y separación completa de datos entre organizaciones. Los planes empresariales incluyen SSO, SAML y controles de acceso granulares.',
     value: 'item-4',
   },
   {
@@ -43,15 +43,15 @@ const FAQList: FAQProps[] = [
     value: 'item-5',
   },
   {
-    question: '¿Puedo probar Eidetik antes de comprar?',
+    question: '¿Puedo probar Framik antes de comprar?',
     answer:
-      'Sí, ofrecemos un plan gratuito que incluye hasta 10 videos por mes, 2GB de almacenamiento y acceso a la API básica. También puedes solicitar una demo personalizada para ver cómo Eidetik se adapta a tus casos de uso específicos.',
+      'Sí, ofrecemos un plan gratuito que incluye hasta 10 videos por mes, 2GB de almacenamiento y acceso a la API básica. También puedes solicitar una demo personalizada para ver cómo Framik se adapta a tus casos de uso específicos.',
     value: 'item-6',
   },
   {
-    question: '¿En qué idiomas funciona Eidetik?',
+    question: '¿En qué idiomas funciona Framik?',
     answer:
-      'Eidetik soporta transcripción y análisis en más de 50 idiomas, incluyendo español, inglés, francés, alemán, italiano, portugués, chino, japonés y muchos más. La búsqueda semántica funciona efectivamente en contenido multiidioma.',
+      'Framik soporta transcripción y análisis en más de 50 idiomas, incluyendo español, inglés, francés, alemán, italiano, portugués, chino, japonés y muchos más. La búsqueda semántica funciona efectivamente en contenido multiidioma.',
     value: 'item-7',
   },
   {

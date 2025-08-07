@@ -19,12 +19,12 @@ export const HeroSection = () => {
             <span> ¡Conecta por MCP con cualquier IA! </span>
           </Badge>
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
-            <h1>
+          <div className="w-full max-w-screen-md mx-auto text-center md:text-6xl font-bold">
+            <h1 className="text-3xl md:text-6xl leading-tight">
              Memoria
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
                 Audiovisual
-              </span>
+              </span> <br />
               para tus IAs
             </h1>
           </div>
@@ -37,7 +37,7 @@ export const HeroSection = () => {
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button asChild className="w-5/6 md:w-1/4 font-bold group/arrow">
-              <a href="https://app.eidetik.com/signup">
+              <a href="https://app.framik.io/signup">
                 Empieza gratis
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </a>
@@ -54,8 +54,8 @@ export const HeroSection = () => {
             className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
             src={
               theme === "light"
-                ? "/eidetik-screenshot.png"
-                : "/eidetik-screenshot.png"
+                ? "/Framik-screenshot.png"
+                : "/Framik-screenshot.png"
             }
             alt="dashboard"
           />

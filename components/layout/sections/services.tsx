@@ -26,7 +26,7 @@ const serviceList: ServiceProps[] = [
     description:
       'Convierte reuniones grabadas en memoria estructurada para seguimiento de decisiones, acuerdos y próximos pasos.',
     type: ContentType.ENTERPRISE,
-    examples: ['Daily standups', 'Board meetings', 'Planning sessions'],
+    examples: ['Dailys', 'Reuniones de dirección', 'Sesiones de planificación'],
   },
   {
     title: 'Webinars y Presentaciones',
@@ -40,21 +40,21 @@ const serviceList: ServiceProps[] = [
     description:
       'Extrae insights y testimonios de entrevistas para crear bibliotecas de conocimiento empresarial y feedback de clientes.',
     type: ContentType.ENTERPRISE,
-    examples: ['User interviews', 'Expert talks', 'Case studies'],
+    examples: ['Entrevistas', 'Charlas', 'Casos de estudio'],
   },
   {
     title: 'Compliance y Auditorías',
     description:
       'Analiza videos de procesos operativos para asegurar cumplimiento normativo y identificar áreas de mejora automáticamente.',
     type: ContentType.ENTERPRISE,
-    examples: ['Safety protocols', 'Quality checks', 'Audit trails'],
+    examples: ['Protocolos de seguridad', 'Inspecciones de calidad', 'Trazas de auditoría'],
   },
   {
     title: 'Investigación y Desarrollo',
     description:
       'Procesa presentaciones de investigación y demos de productos para acelerar la innovación y compartir conocimiento técnico.',
     type: ContentType.MULTIMEDIA,
-    examples: ['Research presentations', 'Product demos', 'Technical reviews'],
+    examples: ['Presentaciones de investigación', 'Demos de productos', 'Revisiones técnicas'],
   },
 ]
 
@@ -67,7 +67,7 @@ export const ServicesSection = () => {
         Transforma Cualquier Contenido en Conocimiento IA
       </h2>
       <h3 className='md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8'>
-        Desde formación empresarial hasta compliance operativo, Eidetik procesa cualquier tipo de
+        Desde formación empresarial hasta compliance operativo, Framik procesa cualquier tipo de
         contenido multimedia para crear memoria estructurada que tus sistemas de IA pueden usar.
       </h3>
 
@@ -78,7 +78,7 @@ export const ServicesSection = () => {
             className='border-slate-300 p-4 bg-muted/60 dark:bg-card h-full relative group hover:shadow-md transition-shadow duration-300'
           >
             <CardHeader>
-              <CardTitle className='group-hover:text-primary transition-colors duration-300'>
+              <CardTitle className='group-hover:text-primary transition-colors duration-300 mb-2 leading-snug'>
                 {title}
               </CardTitle>
               <CardDescription className='mb-12'>{description}</CardDescription>

@@ -24,18 +24,18 @@ export const CommunitySection = () => {
                 <div>
                  ¿Listo para comenzar con
                   <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                    Eidetik?
+                    Framik?
                   </span>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Descubre cómo Eidetik puede transformar la forma en que tus sistemas de IA procesan y utilizan contenido multimedia.
+              Descubre cómo Framik puede transformar la forma en que tus sistemas de IA procesan y utilizan contenido multimedia.
             </CardContent>
 
             <CardFooter>
               <Button asChild>
-                <a href="https://app.eidetik.com/signup" target="_blank">
+                <a href="https://app.framik.io/signup" target="_blank">
                   Empieza gratis
                 </a>
               </Button>

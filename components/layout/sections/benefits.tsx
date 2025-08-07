@@ -24,7 +24,7 @@ const benefitList: BenefitsProps[] = [
     icon: IconApi,
     title: 'Integración API Completa',
     description:
-      'API MCP lista para producción que se integra con cualquier sistema. Conecta Eidetik con tus herramientas existentes en minutos, no en meses.',
+      'API MCP lista para producción que se integra con cualquier sistema. Conecta Framik con tus herramientas existentes en minutos, no en meses.',
   },
   {
     icon: IconRocket,
@@ -45,9 +45,9 @@ export const BenefitsSection = () => {
             Transforma tus Videos en Conocimiento Inteligente
           </h2>
           <p className='text-xl text-muted-foreground mb-8'>
-            Eidetik convierte contenido multimedia en memoria estructurada que tus sistemas de IA
+            Framik convierte contenido multimedia en memoria estructurada que tus sistemas de IA
             pueden usar, recordar y consultar de forma inteligente. El futuro del procesamiento de
-            video es aquí.
+            video está aquí.
           </p>
         </div>
 

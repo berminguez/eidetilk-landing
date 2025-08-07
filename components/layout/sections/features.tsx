@@ -63,7 +63,7 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className='md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8'>
-        Eidetik combina procesamiento de video avanzado, almacenamiento vectorial y APIs modernas
+        Framik combina procesamiento de video avanzado, almacenamiento vectorial y APIs modernas
         para crear la plataforma más completa de memoria fotográfica para sistemas de inteligencia
         artificial.
       </h3>

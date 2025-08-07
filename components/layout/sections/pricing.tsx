@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 enum PopularPlan {
   NO = 0,
@@ -18,77 +19,88 @@ interface PlanProps {
   title: string;
   popular: PopularPlan;
   price: number;
+  buttonLink: string;
   description: string;
   buttonText: string;
   benefitList: string[];
 }
 
+
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: 'Gratuito',
     popular: 0,
     price: 0,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+    buttonLink: 'https://app.framik.io/signup',
+    description: 'Perfecto para probar Eidetik y casos de uso básicos de análisis de video con IA.',
+    buttonText: 'Comenzar gratis',
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      'Hasta 10 videos/mes',
+      '2 GB de almacenamiento',
+      'API básica MCP',
+      'Transcripción automática',
+      'Búsqueda semántica básica',
+      'Soporte por email',
     ],
   },
   {
-    title: "Premium",
+    title: 'Profesional',
     popular: 1,
-    price: 45,
+    price: 49,
+    buttonLink: 'https://app.framik.io/signup?plan=professional',
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      'Ideal para equipos pequeños y medianos que necesitan procesamiento avanzado de contenido.',
+    buttonText: 'Empezar ahora',
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      'Videos ilimitados',
+      '50 GB de almacenamiento',
+      'API MCP completa',
+      'Análisis visual avanzado',
+      'Playground interactivo',
+      'Gestión de equipos',
+      'Soporte prioritario',
+      'Integraciones webhook',
     ],
   },
   {
-    title: "Enterprise",
+    title: 'Empresarial',
     popular: 0,
-    price: 120,
+    price: 199,
+    buttonLink: 'mailto:sales@framik.io',
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      'Solución completa para organizaciones grandes con necesidades de compliance y seguridad.',
+    buttonText: 'Contactar ventas',
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      'Todo de Profesional',
+      'Almacenamiento ilimitado',
+      'Instancia dedicada',
+      'SSO & SAML',
+      'Auditoría y compliance',
+      'SLA del 99.9%',
+      'Soporte telefónico',
+      'Onboarding personalizado',
+      'Integración custom',
     ],
   },
-];
+]
 
 export const PricingSection = () => {
   return (
-    <section className="container py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
-      </h2>
+    <section id='pricing' className="container py-24 sm:py-32">
+     <h2 className='text-lg text-primary text-center mb-2 tracking-wider'>Precios</h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
-      </h2>
+    <h2 className='text-3xl md:text-4xl text-center font-bold mb-4'>
+      Planes adaptados a tu necesidad
+    </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
-      </h3>
+    <h3 className='md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14'>
+      Desde pruebas gratuitas hasta soluciones empresariales. Escala tus contenidos según
+      crezca tu organización.
+    </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
         {plans.map(
-          ({ title, popular, price, description, buttonText, benefitList }) => (
+          ({ title, popular, price, description, buttonText, benefitList, buttonLink }) => (
             <Card
               key={title}
               className={
@@ -123,12 +135,13 @@ export const PricingSection = () => {
 
               <CardFooter>
                 <Button
+                  asChild
                   variant={
                     popular === PopularPlan?.YES ? "default" : "secondary"
                   }
                   className="w-full"
                 >
-                  {buttonText}
+                  <Link href={buttonLink}>{buttonText}</Link>
                 </Button>
               </CardFooter>
             </Card>

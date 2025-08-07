@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import { ChevronsDown, Menu } from "lucide-react";
 import React from "react";
 import { IconCircles } from '@tabler/icons-react'
 import {
@@ -43,18 +43,18 @@ const routeList: RouteProps[] = [
     href: '#features',
     label: 'Características',
   },
-  {
+ /*  {
     href: '#testimonials',
     label: 'Testimonios',
-  },
+  }, */
   {
     href: '#pricing',
     label: 'Precios',
   },
-  {
+ /*  {
     href: '#contact',
     label: 'Contacto',
-  },
+  }, */
   {
     href: '#faq',
     label: 'FAQ',
@@ -71,7 +71,7 @@ export const Navbar = () => {
       <div className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white flex items-center justify-center">
         <IconCircles className="w-6 h-6" />
       </div>
-      <span className="text-xl font-bold">Eidetik</span>
+      <span className="text-xl font-bold">Framik</span>
         
       </Link>
       {/* <!-- Mobile --> */}
@@ -93,7 +93,7 @@ export const Navbar = () => {
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
                     <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Eidetik
+                    Framik
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -118,11 +118,11 @@ export const Navbar = () => {
 
 
         <Button asChild size='sm' variant='ghost'>
-          <a href='https://app.eidetik.com/login'>Iniciar Sesión</a>
+          <a href='https://app.framik.io/login'>Iniciar Sesión</a>
         </Button>
 
         <Button asChild size='sm'>
-          <a href='https://app.eidetik.com/signup'>Registrarse</a>
+          <a href='https://app.framik.io/signup'>Registrarse</a>
         </Button>
       </div>
 
@@ -156,11 +156,11 @@ export const Navbar = () => {
         <ToggleTheme />
 
         <Button asChild size='sm' variant='ghost'>
-          <Link href='/login'>Iniciar Sesión</Link>
+          <Link href='https://app.framik.io/login'>Iniciar Sesión</Link>
         </Button>
 
         <Button asChild size='sm'>
-          <Link href='/signup'>Registrarse</Link>
+          <Link href='https://app.framik.io/signup'>Registrarse</Link>
         </Button>
       </div>
     </header>
