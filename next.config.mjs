@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "github.com",
+        hostname: "framik.io",
       },
     ],
   },
